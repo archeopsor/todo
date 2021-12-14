@@ -4,6 +4,7 @@
 django
 djangorestframework
 django-cors-headers
+djangorestframework-simplejwt
 
 #########
 # MONGO #
@@ -16,3 +17,4 @@ dnspython
 #########
 python-dotenv
 pytz
+datetime

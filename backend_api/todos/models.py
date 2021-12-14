@@ -33,9 +33,3 @@ class Project(models.Model):
     class Meta:
         ordering = ('name', 'description', 'due_date', 'priority', 'progress', 'completed',)
 
-
-# class ItemUser(models.Model):
-#     """Intermediary binding to contain all items for a given user."""
-#     user = models.ForeignKey('auth.User', on_delete=models.CASCADE)
-#     item = models.ForeignKey('Item', on_delete=models.CASCADE)
-#     date_added = models.DateTimeField(auto_now_add=True)
