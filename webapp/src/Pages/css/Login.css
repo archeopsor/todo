@@ -1,0 +1,47 @@
+body {
+    background-color: tan;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.box {
+    align-items: center;
+    justify-content: center;
+}
+
+Form {
+    border: 2px solid black;
+    background-color: #d19a41;
+    margin: 10px;
+    text-align: center;
+    vertical-align: middle;
+    width: 50vw;
+    height: 30vh;
+}
+
+.form-label {
+    font-size: 100%;
+}
+
+.form-control {
+    background-color: rgb(185, 229, 240);
+    border-radius: 0.75em;
+    padding-left: 0.5em;
+    margin-left: 0.5em;
+    margin-top: 1em;
+    box-shadow: 0 0 1em 0.25em rgba(0, 0, 0, 0.384) inset;
+}
+
+Button {
+    padding: 0.2em;
+    margin-top: 2em;
+    width: 10em;
+    height: 3em;
+    background-color:rgb(185, 229, 240);
+    box-shadow: 0 0 1em 0.25em rgba(0, 0, 0, 0.4) inset;
+}
+
+Button:hover {
+    background-color:rgba(0, 0, 0, 0.4)
+}
