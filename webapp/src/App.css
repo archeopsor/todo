@@ -1,3 +1,12 @@
-.login {
-  
+:root {
+    --app-background-color: rgb(94, 94, 94);
+    --login-background-color: rgba(110, 60, 60);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 5px;
+    padding: 0;
+    background-color: var(--app-background-color);
+    font-family: sans-serif;
 }

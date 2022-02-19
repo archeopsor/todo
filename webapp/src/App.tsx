@@ -3,7 +3,9 @@ import './App.css';
 import { store, StoreState } from './Redux';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
+import { Navbar } from './Components/Navbar';
 import { LoginPage } from './Pages/Login';
+import { Homepage } from './Pages/Homepage';
 
 
 const mapStateToProps = (state: StoreState) => {
@@ -14,11 +16,13 @@ const mapStateToProps = (state: StoreState) => {
 function App() {
 
   return (
-    <div>
+    <div className="app-container">
+      <Navbar />
       <BrowserRouter>
         <Routes>
-          {/* <Route exact path="/" component={<HomePage />}/> */}
-          <Route path="login" element={<LoginPage />}/>
+          <Route path="/" element={<Homepage />}/>
+          <Route path="login" element={<LoginPage login={true} />}/>
+          <Route path="signup" element={<LoginPage login={false} />}/>
         </Routes>
       </BrowserRouter>
     </div>
